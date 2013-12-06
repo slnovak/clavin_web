@@ -1,4 +1,4 @@
-## CLAVIN_web: A lightweight API for CLAVIN
+## clavin_web: A lightweight API for CLAVIN
 
 ### Overview
 
