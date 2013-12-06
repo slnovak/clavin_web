@@ -11,7 +11,10 @@ post '/search.json' do
 
   params.merge! JSON.parse(request.body.read)
 
-  resolved_locations = parser.parse(params[:q])
+  # Capitalize all terms so that they may be identified as places.
+  query = params[:q].split.map(&:capitalize).join(" ")
+
+  resolved_locations = parser.parse query
 
   json resolved_locations.map{|location|
     { location_name: location.location.text,
