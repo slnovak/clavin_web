@@ -43,8 +43,10 @@
 
 ### Installation
 
+* `rbenv install jruby-1.7.4`
 * `git clone git@github.com:slnovak/clavin_web.git`
 * `cd clavin_web`
+* `gem install bundler && rbenv rehash`
 * `bundle install --path=vendor && bundle exec jbundle install`
 
 ### Starting the application server
